@@ -1,4 +1,2 @@
 # typst-himcm-template
-This is a HiMCM template for Typst.
-
-Preview: See the main.pdf
+An elegant HiMCM template for Typst from @EvanLuo42, with my reorganization of the summary sheet for more available space.
