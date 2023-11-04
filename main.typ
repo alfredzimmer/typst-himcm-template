@@ -1,13 +1,16 @@
 #import "template.typ": *
 
 #show: project.with(
-  title: "HiMCM",
+  title: "Summary",
   abstract: lorem(400),
   team-number: "00000",
   problem-chosen: "A",
-  year: "2020"
+  year: "0000"
 )
 
 
 = Introduction
-#lorem(200)
+#lorem(400)
+
+== #lorem(5)
+#lorem(400)
