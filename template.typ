@@ -1,3 +1,4 @@
+
 #let project(title: "", abstract: [], team-number: "", problem-chosen: "", year: "", body) = {
   // Set the document's basic properties.
   set document(title: title)
@@ -10,37 +11,46 @@
   set heading(numbering: "1.")
 
   // Team Infomation
-  align(center)[
-    #block(text("Team Control Number", size: 11pt))
-    #block(text(
-      team-number,
-      size: 25pt,
-      fill: red,
-      weight: "bold"
+  grid(
+    columns:(1fr, 1fr, 1fr),
+    align(center)[
+      #block(text("Problem Chosen", size: 11pt))
+      #block(text(
+        problem-chosen,
+        size: 25pt,
+        fill: rgb("#EF333F"),
+        weight: "bold"
     ))
-    #block(text("Problem Chosen", size: 11pt))
-    #block(text(
-      problem-chosen,
-      size: 25pt,
-      fill: red,
-      weight: "bold"
-    ))
-    #block(text(
-      year,
-      size: 15pt,
-      weight: "bold"
+    ],
+    align(center)[
+      #block(text(
+        year,
+        size: 15pt,
+        weight: "bold"
     ), spacing: 10pt)
     #block(text(
       "HiMCM",
       size: 11pt,
       weight: "bold"
     ), spacing: 10pt)
-    #block(text(
+        #block(text(
       "Summary Sheet",
       size: 11pt,
       weight: "bold"
     ), below: 15pt)
-  ]
+    ],
+    align(center)[
+      #block(text("Team Control Number", size: 11pt))
+      #block(text(
+        team-number,
+        size: 25pt,
+        fill: rgb("#EF333F"),
+        weight: "bold"
+    ))
+    
+    
+    ]
+  )
   
   line(length: 100%, stroke: gray)
 
@@ -56,7 +66,7 @@
 
   pagebreak()
 
-  set text(font: "Times New Roman", lang: "en", size: 13pt)
+  set text(font: "Times New Roman", lang: "en", size: 12pt)
 
   outline(indent: true)
 
